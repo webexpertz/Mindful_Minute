@@ -1,0 +1,31 @@
+<!--
+  Generated template for the VideoplayerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Video</ion-title>
+  </ion-navbar>
+</ion-header> -->
+<ion-header text-center>
+    <ion-navbar text-center >
+        <ion-grid>
+            <ion-row text-center>
+              <ion-col col-8 text-center style="margin:auto">
+                  <ion-title ><div text-center>Video Player</div></ion-title>
+              </ion-col>
+              
+              </ion-row>
+            </ion-grid>
+      
+    </ion-navbar>
+  </ion-header>
+<ion-content padding>
+
+  <video id="myvideo" playsinline webkit-playsinline  fullscreen="fullscreen" autoplay="false" controls width="250" (ended)="videoEnded()" controls>
+    <source src="{{media_url}}" type="video/mp4">
+  </video>
+
+</ion-content>

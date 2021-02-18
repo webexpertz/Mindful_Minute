@@ -1,0 +1,83 @@
+ <ion-header>
+  <ion-navbar>
+    <ion-title>
+    <img class="header-logo" src="assets/header.png">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-tabs >
+    <ion-tab [root]="GuidedPage" tabTitle="Introduction" tabIcon="ios-home-outline"></ion-tab>
+    <ion-tab [root]="VideoPage" tabTitle="Form" tabIcon="ios-home-outline"></ion-tab>
+    <ion-tab [root]="AudioPage" tabTitle="FAQ" tabIcon="ios-home-outline"></ion-tab>
+</ion-tabs>
+
+
+<ion-content padding>
+  <ion-list>
+   
+   <ion-item (click)="goToHomePage()">   
+      <ion-icon name="home" item-start></ion-icon>
+      Home
+    </ion-item>
+
+    <!-- <ion-item onclick="window.open('https://themindfulminuteapp.com/product/test-p/', '_blank', 'location=yes'),!1">
+      <ion-icon name="unlock" item-start></ion-icon>
+      Get Unlimited with Premium
+    </ion-item> -->
+
+   <!-- <ion-item (click)="gotopremium()">
+      <ion-icon name="unlock" item-start></ion-icon>
+      Get Unlimited with Premium
+    </ion-item> -->
+
+
+    <ion-item (click)="shareapp()">
+      <ion-icon name="share-alt" item-start></ion-icon>
+      Share App
+    </ion-item>
+    
+     
+     <ion-item (click)="goToCoachingPage()">
+      <ion-icon name="custom-flower" item-start></ion-icon>
+       1 On 1 Coaching
+    </ion-item>
+     <!-- <ion-item onclick="window.open('https://themindfulminuteapp.com/product/mindfullness-master-class/', '_blank', 'location=yes'),!1">
+      <ion-icon name="musical-notes" item-start></ion-icon>
+       Mindfulness Master Class
+    </ion-item> -->
+
+
+    <ion-item (click)="goToMasterClass()">
+      <ion-icon name="ios-school" item-start></ion-icon>
+      Mindfulness Masterclass
+    </ion-item>
+   
+   <!-- <ion-item (click)="goToIntro()"><ion-icon name="musical-notes" item-start></ion-icon>IntroPage </ion-item> -->
+
+
+    <ion-item onclick="window.open('https://themindfulminuteapp.com/privacy-policy/', '_blank', 'location=yes'),!1">
+      <ion-icon name="paper" item-start></ion-icon>
+      Privacy Policy
+    </ion-item>
+
+
+    <ion-item (click)="goToAboutUs()">
+      <ion-icon name="document" item-start></ion-icon>
+      About Us
+    </ion-item>
+
+
+    <ion-item (click)="logoutuser()">
+      <ion-icon name="log-out" item-start></ion-icon>
+      Logout
+    </ion-item>
+
+
+  </ion-list>
+
+</ion-content>
+<ion-tabs >
+    <ion-tab [root]="GuidedPage" tabTitle="Introduction" tabIcon="ios-home-outline"></ion-tab>
+    <ion-tab [root]="VideoPage" tabTitle="Form" tabIcon="ios-home-outline"></ion-tab>
+    <ion-tab [root]="AudioPage" tabTitle="FAQ" tabIcon="ios-home-outline"></ion-tab>
+</ion-tabs>

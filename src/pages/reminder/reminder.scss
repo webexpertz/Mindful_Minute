@@ -1,0 +1,62 @@
+page-reminder {
+	// .notification {
+	// 	box-shadow: none;
+	// 	border-top: 2px solid #e8e8e8;
+	// 	border-radius: 0;
+	// 	padding-top: 10px;
+	// 	margin-bottom: 25px;
+	// 	.icon {
+	// 		margin-right: 5px;
+	// 		position: relative;
+	// 		top: 1px;
+	// 	}
+	// }
+	// .header {
+	// 	// padding: 0 16px;
+	// 	.icon,
+	// 	.title {
+	// 		margin-top: 10px;
+	// 		display: inline-block;
+	// 		vertical-align: middle;
+	// 		padding: 0px 16px;
+	// 	}
+	// }
+	
+	.header {
+		.toolbar-content {
+			padding: 0 32px;
+		}
+		.toolbar-title-ios{
+			text-align: center;
+		}
+		.icon:before {
+			font-size: 28px;
+		}
+		.icon {
+			padding-right: 10px;
+			position: absolute;
+			color: #fff;
+			left: 16px;
+			top: 50%;
+			margin-top: -12px;
+		}
+	}
+    .header-ios{
+		padding-top: 0;
+	}
+	//  notification card
+	.notification {
+		background-color: rgba(255,255,255,0.2);
+		margin: 0 0 15px;
+		width: 100%;
+		border-radius: 5px;
+		padding: 6px 0;
+	
+		 .item {
+		   background-color: transparent;
+		}
+		.icon {
+		   margin-right: 10px;
+		}
+	}
+}

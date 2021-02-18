@@ -1,0 +1,130 @@
+page-guided {
+  .card {
+    border-radius: 15px;
+  }
+
+  .card {
+    position: relative;
+    border-radius: 10px;
+    margin: 5px;
+    width: calc(50% - 10px);
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  ion-card-content.card-content {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+
+    .play-icon {
+      width: 40px;
+      height: 40px;
+      margin: auto;
+    }
+
+  }
+
+
+  page-guided .video-content {
+    padding: 8px 10px;
+    position: absolute;
+    bottom: 0;
+    background-color: #303133;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .video-content {
+    padding: 10px;
+    background-color: #2f3232;
+  }
+
+  page-guided.video-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2f3232;
+    z-index: 1;
+  }
+
+  page-guided ion-card-content.card-content {
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  .premium > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    float: left;
+  }
+  .responsive-img {
+    padding-top: 75%;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 1px;
+      width: 100%;
+      display: block;
+      margin: auto;
+      background-image: url('../assets/bgshade.png');
+      height: 100%;
+      background-repeat: repeat-x;
+      background-position: left;
+      background-size: auto 100%;
+      z-index: 0;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+     img.play-icon {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        left: 50%;
+        top: 50%;
+        margin-left: -21px;
+        margin-top: -21px;
+        z-index: 9;
+   }
+}
+.header-ios {
+   padding: 0%;
+  img{
+     width:100%;  
+  }
+  }
+
+}
+
+
+
+page-guided .card > .premium {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+page-guided .video-content .premium {
+  color: #0bc5b7;
+}
+
+page-guided .video-content .user-type {
+  color: #727272;
+}

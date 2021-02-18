@@ -1,0 +1,67 @@
+page-coaching {
+.header-ios {
+       padding: 0px;
+       img{
+       
+     width:100%;  
+  }
+  }
+
+     .help-block {
+        background-color: #05c9c9;
+        border-radius: 3px;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+        margin: 0;
+        padding: 0 1.2rem 0 1.2rem;
+        position: absolute; 
+        top: auto;
+        z-index: 9;
+        font-size: 1.2rem;
+        right: 18px;
+        color: #fff !important;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        margin-top: -20px; 
+        border-radius: 7px 2px 20px 7px;
+        height: 2rem;
+        line-height: 2rem;
+    }
+     .help-block:after {
+        content: "";
+        right: 0;
+        top: -10px;
+        position: absolute;
+        border-color: transparent transparent #05c9c9 transparent;
+        border-width: 0 0px 14px 14px;
+        border-style: solid;
+    }
+    .logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        img{
+            margin: auto;
+            max-width: 200px;
+        }
+    }
+    h3.heading {
+        margin: 0.5em 0;
+        font-size: 2rem;
+    }
+.para{
+    font-size:1.75rem
+}
+.autherimg{
+    display: block;
+    img {
+        width: 100px;
+        float: left;
+        margin: 0 15px 5px 0px;
+    }
+    p.para {
+        margin-top: 0;
+    }
+   
+}
+}

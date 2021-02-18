@@ -1,0 +1,11 @@
+page-videoplayer video {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+page-videoplayer .header-ios {
+   //position: relative; 
+   padding-top: 0px; 
+}

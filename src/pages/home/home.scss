@@ -1,0 +1,76 @@
+page-home {
+    ion-grid .row {
+        display: block;
+    }
+    .logo img {
+        max-width: 250px;
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    .multimedia ion-col.col {
+        width: 33.33%;
+        float: left;
+    }
+    .multimedia h2 { 
+        font-size: 16px;
+        text-align: center;
+    }
+    .multimedia ion-icon:before {
+        padding-right: 5px;
+    }
+    .logo {
+        margin-bottom: 25px;
+    }
+    .item-inner:first-child {
+        border-top: 2px solid #c8c7cc;
+    }
+    .multimedia {
+        margin-bottom: 30px;
+        .row img {
+            border-radius: 5px;
+        }
+    }
+    .grids  ion-col.col {
+        width: 50%;
+        float: left;
+        .row img {
+            border-radius: 5px;
+       }
+
+    }  
+    ion-card-content.card-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    transform: translateY(-50%);
+    z-index: 999;
+    right: 0;
+    .play-icon{
+      width: 50px;
+      height: 50px;
+      margin: auto;
+      float:none;
+
+    }
+
+  }
+  .grids .card > img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+ .grids .card {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+}
+
+  

@@ -1,0 +1,75 @@
+<!--
+  Generated template for the LessonplayerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title class="ion-text-center" >Lessonplayer</ion-title>
+  </ion-navbar>
+</ion-header> -->
+<ion-header text-center>
+    <ion-navbar text-center >
+        <ion-grid>
+            <ion-row text-center>
+              <ion-col col-8 text-center style="margin:auto">
+                  <ion-title ><div text-center>Lesson Player</div></ion-title>
+              </ion-col>
+              
+              </ion-row>
+            </ion-grid>
+      
+    </ion-navbar>
+  </ion-header>
+<ion-content padding>
+    <ion-grid>
+        <ion-row  >
+            <ion-col class="ion-text-justify">
+                <div class="ion-text-center">
+                    <h3>{{media_url.title.rendered}}</h3>
+                 </div>
+                 <!-- <ion-title >{{media_url.title.rendered}}</ion-title> -->
+            </ion-col>
+        </ion-row>
+    
+        <ion-row>
+            <ion-col>
+                <img [src]="media_url._embedded['wp:featuredmedia'][0].source_url">
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <audio controls autoplay="true" controls width="250">
+                    <source src="{{media_url.acf.file.url}}}" type="audio/wav">
+    
+                </audio>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <div class="ion-text-justify">
+                   
+                  <p>
+                    {{media_url.blog}}
+                  </p>
+                  </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+  <!-- <ion-card>
+    <div class="audio-content">
+     <div class="card-title">{{media_url.title.rendered}}</div>
+
+      <audio controls autoplay="true" controls width="250">
+        <source src="{{media_url.acf.file.url}}}" type="audio/wav">
+    
+      </audio>
+      
+
+    </div>
+
+  </ion-card> -->
+
+  
+</ion-content>

@@ -1,0 +1,104 @@
+<!--
+  Generated template for the SignedupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding color="primary">
+
+  <!--
+    <ion-spinner *ngIf="isShowing" name="circles"></ion-spinner>
+  -->
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="assets/logo.png">
+        <form [formGroup]="formgroup">
+          <ion-list class="no-border">
+            <ion-card class="card-ios">
+              <ion-item>
+                <ion-label>
+                  <ion-icon class="icon-size" name="contact"></ion-icon>
+                </ion-label>
+                <ion-input required pattern="^[a-zA-Z]+$" placeholder="Username" type="text" formControlName="username">
+                </ion-input>
+              </ion-item>
+              <p class="help-block" *ngIf=" username.hasError('required') && username.touched ">Username is Required</p>
+              <p class="help-block" *ngIf=" username.hasError('pattern') && username.touched ">Enter valid username</p>
+            </ion-card>
+
+            <ion-card class="card-ios">
+              <ion-item>
+                <ion-label>
+                  <ion-icon class="icon-size" name="contact"></ion-icon>
+                </ion-label>
+                <ion-input required pattern="^[a-zA-Z\\s]+" placeholder="Name" type="text" formControlName="name">
+                </ion-input>
+              </ion-item>
+              <p class="help-block" *ngIf=" name.hasError('required') && name.touched ">Name is Required</p>
+              <p class="help-block" *ngIf=" name.hasError('pattern') && name.touched ">Enter valid name</p>
+            </ion-card>
+
+            <ion-card class="card-ios">
+              <ion-item>
+                <ion-label>
+                  <ion-icon class="icon-size" name="mail"></ion-icon>
+                </ion-label>
+                <ion-input required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}$" placeholder="Email"
+                           type="text" formControlName="email"></ion-input>
+              </ion-item>
+              <p class="help-block" *ngIf=" email.hasError('required') && email.touched ">Email is Required</p>
+              <p class="help-block" *ngIf=" email.hasError('pattern') && email.touched ">enter valid Email </p>
+            </ion-card>
+
+            <ion-card class="card-ios">
+              <ion-item>
+                <ion-label>
+                  <ion-icon class="icon-size" name="lock"></ion-icon>
+                </ion-label>
+                <ion-input required minlength="5" formControlName="mpassword" placeholder="Password"
+                           type="password"></ion-input>
+              </ion-item>
+              <p class="help-block" *ngIf=" mpassword.hasError('required') && mpassword.touched ">Password is
+                Required</p>
+              <p class="help-block" *ngIf=" mpassword.hasError('minlength') && mpassword.touched ">Password is greater
+                than 5</p>
+            </ion-card>
+
+            <ion-card class="card-ios">
+              <ion-item>
+                <ion-label>
+                  <ion-icon class="icon-size" name="lock"></ion-icon>
+                </ion-label>
+
+                <ion-input required (input)="getCpass($event)" placeholder="Confirm Password" type="password"
+                           formControlName="confirm_pass"></ion-input>
+              </ion-item>
+              <p class="help-block" *ngIf=" confirm_pass.hasError('required') && confirm_pass.touched ">Confirm password
+                is Required</p>
+              <p class="help-block" *ngIf="value">Password not matched</p>
+            </ion-card>
+
+          </ion-list>
+          <button class="signup-button button-full" ion-button color="dark" type="submit"
+                  (click)="register(formgroup.value)" [disabled]="!formgroup.valid || value" expand="full">Sign Up
+          </button>
+        </form>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row text-center class="fixed-con">
+      <ion-row>
+        <span class="or-line">or</span>
+      </ion-row>
+
+      <ion-col>
+        <span> Already have an Account</span>
+        <span class="signin" (click)="onSignup()">SIGN IN</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

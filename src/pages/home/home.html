@@ -1,0 +1,68 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content padding>
+<ion-grid>
+	<ion-row justify-content-center class="logo"> <img src="assets/logo.png"></ion-row>
+<ion-row class="multimedia">  
+ <ion-col (click)="goToAudio()">
+<h2>
+	<ion-row justify-content-center  ><ion-icon name='ios-musical-notes-outline'>Music</ion-icon>
+	</ion-row>
+</h2>
+	<ion-row justify-content-center><img src="assets/music-ico.png"></ion-row>
+</ion-col>
+<ion-col (click)="goToVideo()">
+	<h2><ion-row justify-content-center ><ion-icon name='ios-play-outline'>Video</ion-icon></ion-row></h2>
+	<ion-row justify-content-center><img src="assets/video-ico.png"></ion-row>
+</ion-col>
+<ion-col (click)="goToGuided()">
+	<h2><ion-row justify-content-center><ion-icon name='ios-home-outline'>Guided</ion-icon></ion-row></h2>
+	<ion-row justify-content-center><img src="assets/Sacral-Chakra-1.jpg"></ion-row>
+</ion-col> 
+
+
+</ion-row>
+</ion-grid>
+ 
+<!-- <ion-item onclick="window.open('https://themindfulminuteapp.com/plans/'),!1">
+      Premium Subscription
+    </ion-item> -->
+<ion-item (click)="goToCoaching()">1 On 1 Coaching</ion-item>
+<!-- <ion-item onclick="window.open('https://themindfulminuteapp.com/product/mindfullness-master-class/', '_blank', 'location=yes'),!1">Mindfulness Master Classes </ion-item> -->
+<ion-item (click)="reminder()">Reminders</ion-item>
+<ion-item (click)="goToMasterClass()">
+  Mindfulness Masterclass
+</ion-item>
+<ion-grid > 
+<ion-row class="grids" >   
+   <ion-col   > <ion-card  (click)="VideoPlayer()">
+<img src="assets/aboutvideoicon.png">
+  <ion-card-content>
+    <img src="assets/vdo_btn.png" class="play-icon" item-right/>
+  </ion-card-content>
+
+    
+  </ion-card>  </ion-col>
+    <ion-col >
+    <ion-card  (click)="VideoPlayer2()">
+<img  class="imgs" src="assets/logo.png" (click)="VideoPlayer2()" />  <ion-card-content height="120%"
+width="120%" >
+    <img src="assets/vdo_btn.png" class="play-icon" item-right/>
+  </ion-card-content>
+
+    
+  </ion-card> </ion-col>
+      </ion-row>
+   </ion-grid>
+ 
+
+</ion-content>
+
+<!-- <img  src="assets/aboutvideoicon.png" (click)="VideoPlayer()" />
+<img class="imgs" src="assets/vdo-img2.png" (click)="VideoPlayer2()" /> -->

@@ -1,0 +1,100 @@
+page-video {
+  .card {
+    border-radius: 15px;
+  }
+
+  .card {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    margin: 16px 0;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  ion-card-content.card-content {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    .play-icon{
+      width: 40px;
+      height: 40px;
+      margin: auto;
+    }
+
+  }
+
+
+  page-video .video-content {
+    padding: 8px 10px;
+    position: absolute;
+    bottom: 0;
+    background-color: #303133;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .video-content {
+    padding: 10px;
+    background-color: #2f3232;
+  }
+
+  page-video.video-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2f3232;
+    z-index: 1;
+  }
+  page-video  ion-card-content.card-content {
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  .premium > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    float: left;
+  }
+}
+page-video .card:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -54px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  background-image: url('../assets/bgshade.png');
+  height: 100%;
+  background-repeat: repeat-x;
+  background-position: left;
+  background-size: auto 100%;
+  z-index: 0;
+}
+page-video .card > .premium {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+page-video .video-content .premium {
+  color: #0bc5b7;
+}
+page-video .video-content .user-type {
+  color: #727272;
+}
+page-video .header {
+       padding: 0px;
+       img{
+       width:100%;  
+  }
+}

@@ -1,0 +1,41 @@
+page-audioplayer {
+ 
+  .audio-content .card-title {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .audio-content > div {
+    text-align: center;
+  }
+  .audio-content .premium {
+    margin-bottom: 10px;
+  }
+   audio {
+    width: 100%;
+  }
+  .card.card-ios {
+    margin: 0;
+    width: 100%;
+    color: white;
+  }
+  .header-ios {
+    //position: relative; 
+    padding-top: 0px; 
+ }
+.card{
+   height: 100%;
+   margin-bottom: 15%;
+  
+}
+.card-title-ios{ 
+  text-align: center;
+  color:white;
+  margin-top:-10px
+}
+.card-title-md{
+  text-align: center;
+  color:white;
+  margin-top:-10px
+
+}
+}

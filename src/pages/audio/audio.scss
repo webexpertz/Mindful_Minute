@@ -1,0 +1,116 @@
+page-audio {
+	.content {
+		background-color: $background-color !important;
+	}
+	.card {
+		position: relative;
+		border-radius: 15px;
+		width: 50%;
+		float: left;
+		padding: 0 5px;
+		background: transparent;
+		margin: 0 0 15px;
+		box-shadow: none;
+		&::before {
+			background: linear-gradient(to bottom, transparent 40%, #000);
+			position: absolute;
+			content: "";
+			top: 0;
+			bottom: 0;
+			left: 5px;
+			right: 5px;
+		}
+		&-md {
+			position: relative;
+			border-radius: 15px;
+			width: 50%;
+			float: left;
+			padding: 0 5px;
+			background: transparent;
+			margin: 0 0 15px;
+			box-shadow: none;
+		}
+	}
+	ion-card>img {
+		width: 100%;
+		min-height: 160px;
+		border-radius: 10px;
+	}
+	.card-content {
+		position: absolute;
+		bottom: 0;
+		padding: 5px;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		.card-subtitle {
+			font-size: 1rem;
+		}
+		.fab-img {
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			right: 15px;
+			bottom: 8px;
+		}
+	}
+	.premium {
+		top: 0;
+		position: absolute;
+		padding: 5px;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 0
+	}
+	.premium>img {
+		width: 20px;
+		height: 20px;
+		margin-right: 3px;
+	}
+	.header-ios {
+   padding: 0%;
+  img{
+     width:100%;  
+  }
+  }
+	.embedded {
+		position: relative;
+		padding-top: 100%;
+	}
+	.embedded>img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		object-fit: cover;
+	}
+	.card-content .card-subtitle {
+		color: #0b9891;
+	}
+	.embedded .card-title {
+		padding-right: 35px;
+	}
+	.embedded:after {
+		width: 100%;
+		content: "";
+		left: 0;
+		top: 0;
+		display: block;
+		position: absolute;
+		height: 100%;
+		background-image: url("../assets/bgshade.png");
+		z-index: 0;
+		background-repeat: repeat-x;
+		background-position: left;
+		background-size: auto 100%;
+	}
+	.card-content {
+		z-index: 1;
+  }
+  
+
+}

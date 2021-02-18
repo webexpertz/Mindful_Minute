@@ -1,0 +1,124 @@
+page-masterclass {
+    ion-card {
+        display: contents;
+        overflow: hidden;
+    }
+    .myCard{
+      //  margin-bottom:12px;
+    }
+    // .block {
+    //     //margin-bottom: 13px;
+    //     width:100%;
+    //     height:100px;
+    //     border:1px solid #fff;    
+    //     border-radius: 11px;
+    //         }
+     .block {
+        width: 70%;
+        height: auto;
+        border: 1px solid #fff;
+        border-radius: 11px;
+        margin: auto;
+    }
+    
+   .block p{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 1.7rem;
+   }
+.title{
+    font-size: 1.6rem;
+    width: 100%;
+}
+.header-ios {
+    //position: relative; 
+    padding-top: 0px; 
+ }
+p { text-align: justify;
+    img{
+float: left;
+border: -4px dotted black;
+margin: 0px 11px 0px 0px;
+}   
+}
+.myOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.backgroundimg {
+    position: relative;
+}
+
+
+ /*.help-block {
+        background-color: #05c9c9;
+        border-radius: 3px;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+        margin: 0;
+        padding: 0 1.2rem 0 1.2rem;
+        position: absolute; 
+        top: auto;
+        z-index: 9;
+        font-size: 1.2rem;
+        right: 18px;
+        color: #fff !important;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        margin-top: -20px; 
+        border-radius: 7px 2px 20px 7px;
+        height: 2rem;
+        line-height: 2rem;
+    }
+     .help-block:after {
+        content: "";
+        right: 0;
+        top: -10px;
+        position: absolute;
+        border-color: transparent transparent #05c9c9 transparent;
+        border-width: 0 0px 14px 14px;
+        border-style: solid;
+    }
+    .logo img {
+        max-width: 250px;
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+  .logo {
+        margin-bottom: 25px;
+    }
+    .logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        img{
+            margin: auto;
+            max-width: 200px;
+        }
+    }
+
+    form {
+        .card {
+            border: 1px solid #fff;
+            border-radius: 50px;
+            margin: 0 0 10px;
+            width: 100%;
+            .icon {
+                color: #fff;
+            }
+        }
+        .signup-button {
+            color: #fff;
+            background: linear-gradient(258deg, #51d18d 0%, #2e9efb 100%) !important;
+            opacity: 1 !important;
+            border-radius: 35px !important;
+            height: 4.6rem !important;
+        }
+    
+    }*/
+}

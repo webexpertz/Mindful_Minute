@@ -1,0 +1,81 @@
+<!--
+  Generated template for the MasterclassPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Mindfulness Master Class</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+ <ion-grid>
+ <ion-row>
+   <h5> Masterclass – Mindfulness Based Application Practices
+</h5>
+ </ion-row> 
+ <ion-row>
+    <p>
+
+    <img width="100" height="150" src="assets/Yessi_Sitting.jpg"> 
+    In this 15-week on-line class you can learn at your own pace and dive into the world of Mindfulness from Certified Mindfulness Teacher and Psychotherapist Yessica Avancena. You will have access to 15 audio files and a complete handbook with supplemental material included. Topics include, What is Mindfulness? The True-Self Vs. The Ego, Forgiveness, Present Moment Awareness, Abundance, Equanimity, Mindful Living and many more. After taking this class, you will be proficient in the everyday applications of mindfulness and developing your own practice for wellness and self-development. Similar courses would cost anywhere from $500-$1,500 you can receive the same training that fits in your schedule for a one-time payment of $22 or included in your yearly subscription for Premium content for $33 a Best Value!
+   </p>
+ </ion-row>   
+ <ion-row  >
+    <div class="title">15 Week Mindfulness Masterclass </div>
+  
+  </ion-row>
+  <ion-row >
+    <!-- <button *ngIf="paid=='false'" ion-button color="secondary" onclick="window.open('https://themindfulminuteapp.com/product/mindfullness-master-class/', '_blank', 'location=yes'),!1" round full>Subscribe</button> presentConfirm -->
+    <button *ngIf="paid=='false'" ion-button color="secondary" (click)="presentConfirm()"   round full>Subscribe</button>
+  </ion-row>
+<div>
+  <h4  *ngIf="!lessondata" text-center >loading ...</h4>
+
+<ion-row class='backgroundimg'  *ngFor='let lesson of pdflist ; let i= index' (click)="selectedPdf(i)" >
+   <ion-col size="auto"> 
+  <ion-card class="myCard" >
+     <img class='block' src="{{lesson._embedded['wp:featuredmedia'][0].source_url}}">
+    <div class="myOverlay">
+        <!-- <ion-card-header>
+     
+           </ion-card-header> -->
+        <!-- <ion-card-content>
+      {{lesson.title.rendered}}
+        </ion-card-content> -->
+    </div>
+   </ion-card>
+   </ion-col>
+  </ion-row>
+  <ion-row class='backgroundimg'  *ngFor='let lesson of audiolist ; let i= index' (click)="selectedAudio(i)" >
+    <ion-col size="auto"> 
+   <ion-card class="myCard" >
+      <img class='block' src="{{lesson._embedded['wp:featuredmedia'][0].source_url}}">
+     <div class="myOverlay">
+         <!-- <ion-card-header> -->
+           <!-- Lesson {{i+1}} -->
+            <!-- </ion-card-header> -->
+         <!-- <ion-card-content>
+       {{lesson.title.rendered}}
+         </ion-card-content> -->
+     </div>
+    </ion-card>
+    </ion-col>
+   </ion-row>
+</div>
+  <!-- <ion-row >
+    <button *ngIf="paid=='false'" ion-button color="secondary" onclick="window.open('https://themindfulminuteapp.com/product/mindfullness-master-class/', '_blank', 'location=yes'),!1" round full>Subscribe</button>
+  </ion-row> -->
+ </ion-grid>
+ <ion-infinite-scroll (ionInfinite)="doInfinite($event)" threshold="5000px"  [hidden]="laodingcomplete" >
+  <ion-infinite-scroll-content
+    loading-spinner="bubbles"
+    loading-text="Loading more data...">
+  </ion-infinite-scroll-content>
+</ion-infinite-scroll>
+</ion-content>
+
+

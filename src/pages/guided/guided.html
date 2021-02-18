@@ -1,0 +1,63 @@
+<!-- <ion-header>
+   <img src="assets/tnb.png">   
+</ion-header> -->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    <img class="header-logo" src="assets/header.png">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+   <ion-item no-lines>
+     <ion-label>Filter by duration</ion-label>
+      <ion-select interface="popover" role="presentation" (ionChange)="onSelectDuration($event); ">
+          <ion-option *ngFor='let filter of filterbyduration' [value]="filter" [selected]="filter.name==selectDuration.name"  >{{filter.name}}</ion-option>
+        <!-- <ion-option value="all" >All</ion-option>
+        
+        <ion-option value="01:00" >1 min</ion-option>
+        <ion-option value="03:00" >3 min</ion-option>
+        <ion-option value="05:00" >5 min</ion-option>
+        <ion-option value="10:00">10 min</ion-option> -->
+      </ion-select>
+    </ion-item> 
+    
+
+  <ion-card *ngFor="let title of json_array; let i= index" (click)="itemSelected(title,i)">
+
+    <div class="premium" *ngIf="title.restrict_area == 'paid'">
+      <img src="assets/premium.png" item-right/>
+      Premium
+    </div>
+
+    <div class="responsive-img">
+    <img [src]="title.featured_image_src">
+    <img src="assets/vdo_btn.png" class="play-icon" item-right/>  
+  </div>
+    <!-- <ion-card-content>
+      
+      <div class="sub-msg" *ngIf="title.restrict_area == 'unpaid'">Subscribe your plan</div>
+
+    </ion-card-content> -->
+
+    <div class="video-content">
+      <div class="card-title">{{title.title.rendered}}</div>
+
+
+      <div class="premium" *ngIf="title.restrict_area == 'paid'">For premium users</div>
+      <div class="user-type" *ngIf="title.restrict_area == 'unpaid'">For all users</div>
+
+    </div>
+  </ion-card>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" threshold="5000px"  [hidden]="laodingcomplete">
+    <ion-infinite-scroll-content
+      loading-spinner="bubbles"
+      loading-text="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>
+
