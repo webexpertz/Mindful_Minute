@@ -1,1 +1,1 @@
-# Mindful_Minute
+# Mindful-Minute
